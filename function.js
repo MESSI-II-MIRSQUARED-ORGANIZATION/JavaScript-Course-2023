@@ -71,7 +71,17 @@ let value2 = sum(1,2);
 //Write a function that checks
 //for a user's age > 18 and print either you can watch this movie, if not sorry you ca
 //n't watch this movie
-
+age();
+ function age() {
+    let userAge = 29;
+    console.log(userAge);
+    if (userAge >= 18) {
+        console.log('can watch this movie');
+    }
+    else{
+        console.log(' sorry cannot watch this movie');
+    }
+ }
 //FUNCTION EXPRESSIONS
 
 
