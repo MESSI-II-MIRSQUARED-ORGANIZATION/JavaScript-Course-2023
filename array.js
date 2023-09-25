@@ -114,3 +114,8 @@ console.log(someUsers);
   // SPLIT AND JOIN
   // REVERSE
   //  REDUCE
+   // MAP
+  // SORT
+  // SPLIT AND JOIN
+  // REVERSE
+  //  REDUCE
