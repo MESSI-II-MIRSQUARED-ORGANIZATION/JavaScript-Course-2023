@@ -41,6 +41,23 @@ articles.sort(Article.compare);// is going to use it and give you back
 /*
 in the animal class add a static method to compare animals speed
 */
+class Animal{
+  constructor(name, speed){
+    this.name = name;
+    this.speed = speed;
+  }
+  static compare(animalA , animalB){
+    return animalA.speed - animalB.speed;
+  }
+}
+let animals = [
+  new Animal("lion", 1000),
+  new Animal("tiger", 2000),
+  new Animal("cat", 500)
+];
+animals.sort(Animal.compare);
+console.log(`${animals[2].name}`);
+
 
 let numArray = [];
 
