@@ -1,0 +1,24 @@
+                                 window (root object)
+DOM(Document Object Model)      BOM(Browser Object Model)         JAVASCRIPT
+document                        navigator, screen,location         objects, arrays, functions
+
+console.dir(window)
+
+//tags are element nodes as well as being an object
+
+                header
+        h1                 ul
+
+
+        item 1 <-   item 2  -> item 3 
+
+
+
+
+                HTML
+        HEAD             BODY  ...
+
+nodes: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling
+
+parentElement: parentElementNode, childElementNodes, firstElementChild, lastElementChild,
+ previousElementSibling, nextElementSibling
