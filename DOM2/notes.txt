@@ -1,0 +1,8 @@
+// An event is a signal that something has happened
+A handler is just a way to run Javascript code in case of a user action(s)
+
+Types of events
+click, contextmenu, mouseover / mouseout, mouseup / mousedown
+
+// event.target is there to tell us where the event began
+// this is for the current element

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM Interaction 2</title>
+  <style>
+    body *{
+      margin: 10px;
+      border: 1px solid blue;
+    }
+  </style>
+  <script src="app.js" defer></script>
+  <script defer>
+function countRabbits(){
+  for (let i = 1; i < 3; i++) {
+   alert('Rabbit number ' + i);
+    
+  }
+}
+
+
+  </script>
+</head>
+<body >
+  <h1>Introduction to Browser Events</h1>
+<!-- HTML ATTRIBUTE html -->
+  <input value="click-me" onclick="alert('Click me')" type="button"/>
+  <input value="Count rabbits" onClick="countRabbits()" type="button"/>
+  <!-- onclick or onClick ONCLICK -->
+
+  <!-- DOM PROPERTY  html + js--> 
+  <input value="click-me 2"  type="button"/>
+  <button id="elem">hello here</button>
+
+
+
+  <!-- <script>
+  const elem = document.getElementById('elem');
+  function sayThanks() { 
+    alert('Thank you!');
+  }
+
+  function sayThanks2() { 
+    alert('Thank you! number 2');
+  }
+
+  elem.onclick = sayThanks;
+  elem.onclick = sayThanks2;
+  </script> -->
+
+  <br> <br>
+<form onclick="alert(this)">
+  FORM
+  <div onclick="event.stopPropagation()">
+    DIV
+   <p onclick="alert('Para')">P</p>
+  </div>
+</form>
+
+<br> <br>
+<div id="menu">
+<button data-action="save">SAVE</button>
+<button data-action="load">LOAD</button>
+<button data-action="search">SEARCH</button>
+</div>
+
+Counter: <input id="counterBtn"  type="button" value="1" data-counter/>
+<br> <br>
+
+
+<a href="https://www.google.com" onclick="return false">Go to google</a>
+<a href="https://www.google.com" onclick="event.preventDefault()">Go to google 2</a>
+
+
+<button>Right click shows browser context menu</button>
+<button oncontextmenu="alert('This is a custom context menu'); return false">Right click shows our context menu</button>
+
+<br> <br>
+
+
+<span ondblclick="alert('I have been double clicked')" onmousedown="return false">Double click me</span>
+
+<div oncopy="alert('Copying is FORBIDDEN!'); return false">
+  Dear user,
+  The copying of this information is forbidden for you.
+  If you know Js or HTML, then you can get everything from the 
+  page source code
+</div>
+
+</body>
+</html>
