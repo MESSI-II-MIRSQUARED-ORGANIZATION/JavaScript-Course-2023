@@ -43,3 +43,6 @@ color: red;
 
 
 div2.classList.add('alert');
+    //classList.remove
+    //classList.toogle
+    //classList.contains
