@@ -65,3 +65,6 @@ counterBtn.addEventListener('click', function (event){
         event.target.value++;
     }
 })
+
+/*
+*/
